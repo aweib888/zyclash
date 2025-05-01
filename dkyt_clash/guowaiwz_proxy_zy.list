@@ -8,6 +8,7 @@
 # SRC-PORT,7777 #匹配数据源端口
 
 DOMAIN,tktube.com
+DOMAIN,dy2018.com
 
 # 内容：GoogleCNProxyIP 谷歌中国服务 services.googleapis.cn
 IP-CIDR,120.232.181.162/32,no-resolve
