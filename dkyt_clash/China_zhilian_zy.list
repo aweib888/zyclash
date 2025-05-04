@@ -9,3 +9,4 @@
 
 DOMAIN-KEYWORD,cloudflarestorage
 IP-CIDR,192.168.0.0/16,no-resolve
+DOMAIN,deqixs.com
