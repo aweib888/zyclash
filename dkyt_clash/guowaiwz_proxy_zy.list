@@ -11,6 +11,7 @@ DOMAIN,tktube.com
 DOMAIN,dy2018.com
 DOMAIN,avlabo.com
 IP-CIDR,103.194.184.5/8
+DOMAIN-KEYWORD,cn.ttkan.co
 
 # 内容：GoogleCNProxyIP 谷歌中国服务 services.googleapis.cn
 IP-CIDR,120.232.181.162/32,no-resolve
