@@ -8,6 +8,5 @@
 # SRC-PORT,7777 #匹配数据源端口
 
 DOMAIN-KEYWORD,cloudflarestorage
-IP-CIDR,192.168.0.0/16,no-resolve
 DOMAIN-KEYWORD,deqixs.com
 DOMAIN-KEYWORD,ibabyxs8.com
