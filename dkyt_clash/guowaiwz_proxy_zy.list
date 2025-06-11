@@ -8,6 +8,7 @@
 # SRC-PORT,7777 #匹配数据源端口
 
 DOMAIN,tktube.com
+DOMAIN,github.com
 DOMAIN,dy2018.com
 DOMAIN,avlabo.com
 IP-CIDR,103.194.184.5/8
