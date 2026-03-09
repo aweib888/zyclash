@@ -1,6 +1,6 @@
 proxy-groups:
   - name: 🚀 节点选择
-    type: select
+    输入: select
     proxies:
       - ♻️ 自动选择
       - 🇭🇰 香港节点
@@ -13,14 +13,14 @@ proxy-groups:
       - DIRECT
   - name: 🚀 手动切换
     include-all: true
-    type: select
+    输入: select
   - name: ♻️ 自动选择
-    type: url-test
+    输入: url-test
     include-all: true
     interval: 300
     tolerance: 50
   - name: 📲 电报消息
-    type: select
+    输入: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
@@ -33,7 +33,7 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 💬 OpenAi
-    type: select
+    输入: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
@@ -46,7 +46,7 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 📹 油管视频
-    type: select
+    输入: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
@@ -59,7 +59,7 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 🎥 奈飞视频
-    type: select
+    输入: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
@@ -86,7 +86,7 @@ proxy-groups:
       - 🇨🇳 台湾节点
       - 🇭🇰 香港节点
   - name: 🌍 国外媒体
-    type: select
+    输入: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
@@ -108,7 +108,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🚀 手动切换
   - name: 📢 谷歌FCM
-    type: select
+    输入: select
     proxies:
       - DIRECT
       - 🚀 节点选择
@@ -120,7 +120,7 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🚀 手动切换
   - name: Ⓜ️ 微软Bing
-    type: select
+    输入: select
     proxies:
       - DIRECT
       - 🚀 节点选择
@@ -132,7 +132,7 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🚀 手动切换
   - name: Ⓜ️ 微软云盘
-    type: select
+    输入: select
     proxies:
       - DIRECT
       - 🚀 节点选择
@@ -144,7 +144,7 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🚀 手动切换
   - name: Ⓜ️ 微软服务
-    type: select
+    输入: select
     proxies:
       - 🚀 节点选择
       - DIRECT
@@ -156,7 +156,7 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🚀 手动切换
   - name: 🍎 苹果服务
-    type: select
+    输入: select
     proxies:
       - DIRECT
       - 🚀 节点选择
@@ -168,7 +168,7 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🚀 手动切换
   - name: 🎮 游戏平台
-    type: select
+    输入: select
     proxies:
       - DIRECT
       - 🚀 节点选择
@@ -180,7 +180,7 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🚀 手动切换
   - name: 🎶 网易音乐
-    type: select
+    输入: select
     include-all: true
     filter: (?i)网易|音乐|NetEase|Music
     proxies:
@@ -188,23 +188,23 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
   - name: 🎯 全球直连
-    type: select
+    输入: select
     proxies:
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
   - name: 🛑 广告拦截
-    type: select
+    输入: select
     proxies:
       - REJECT
       - DIRECT
   - name: 🍃 应用净化
-    type: select
+    输入: select
     proxies:
       - REJECT
       - DIRECT
   - name: 🐟 漏网之鱼
-    type: select
+    输入: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
@@ -219,53 +219,53 @@ proxy-groups:
   - name: 🇭🇰 香港节点
     include-all: true
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
-    type: url-test
+    输入: url-test
     interval: 300
     tolerance: 50
   - name: 🇯🇵 日本节点
     include-all: true
     filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
-    type: url-test
+    输入: url-test
     interval: 300
     tolerance: 50
   - name: 🇺🇲 美国节点
     include-all: true
     filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
-    type: url-test
+    输入: url-test
     interval: 300
     tolerance: 50
   - name: 🇨🇳 台湾节点
     include-all: true
     filter: (?i)台|新北|彰化|TW|Taiwan
-    type: url-test
+    输入: url-test
     interval: 300
     tolerance: 50
   - name: 🇸🇬 狮城节点
     include-all: true
     filter: (?i)新加坡|坡|狮城|SG|Singapore
-    type: url-test
+    输入: url-test
     interval: 300
     tolerance: 50
   - name: 🇰🇷 韩国节点
     include-all: true
     filter: (?i)KR|Korea|KOR|首尔|韩|韓
-    type: url-test
+    输入: url-test
     interval: 300
     tolerance: 50
   - name: 🎥 奈飞节点
     include-all: true
     filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
-    type: select
+    输入: select
 
 rule-providers:
 # 自用直连网站
   China_zhilian_zy: 
-    url: https://raw.githubusercontent.com/aweib888/zyclash/refs/heads/main/dkyt_clash/China_zhilian_zy.list
+    url: https://github.com/aweib888/zyclash/blob/main/dkyt_clash/China_zhilian_zy.list
     path: ./ruleset/China_zhilian_zy.list
     behavior: classical
     interval: 86400
     format: text
-    type: http
+    输入: http
 
 # 自用国外代理网站
   guowaiwz_proxy_zy: 
@@ -274,7 +274,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     format: text
-    type: http
+    输入: http
 
 # 本地/局域网地址
   LocalAreaNetwork: 
@@ -283,7 +283,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     format: text
-    type: http
+    输入: http
 
 # Unbreak 白名单 不应该被广告链接的网站
   UnBan:
@@ -292,7 +292,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     format: text
-    type: http
+    输入: http
 
 # 本碎片只包含常见广告关键字、广告联盟。无副作用，放心使用
   BanAD:
@@ -301,7 +301,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     format: text
-    type: http
+    输入: http
 
 # 包含常用应用的各种去广告规则。
 # 可能有轻微副作用，可放心使用。（如果网站功能和广告冲突，会删掉去广告规则）
@@ -311,7 +311,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     format: text
-    type: http
+    输入: http
 
 # 内容：GoogleFCM 谷歌推送服务
   GoogleFCM:
