@@ -260,7 +260,7 @@ proxy-groups:
 rule-providers:
 # 自用直连网站
   China_zhilian_zy: 
-    url: https://github.com/aweib888/zyclash/blob/main/dkyt_clash/China_zhilian_zy.list
+    url: https://raw.githubusercontent.com/aweib888/zyclash/refs/heads/main/dkyt_clash/China_zhilian_zy.list
     path: ./ruleset/zlzy.list
     behavior: classical
     interval: 86400
