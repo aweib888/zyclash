@@ -261,7 +261,7 @@ rule-providers:
 # 自用直连网站
   China_zhilian_zy: 
     url: https://github.com/aweib888/zyclash/blob/main/dkyt_clash/China_zhilian_zy.list
-    path: ./ruleset/China_zhilian_zy.list
+    path: ./ruleset/zlzy.list
     behavior: classical
     interval: 86400
     format: text
@@ -320,7 +320,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     format: text
-    type: http
+    输入: http
 
 # Google China
   GoogleCN:
@@ -329,7 +329,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     format: text
-    type: http
+    输入: http
 
 # 内容：SteamCN
   SteamCN:
