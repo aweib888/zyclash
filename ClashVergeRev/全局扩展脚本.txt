@@ -1,1 +1,1 @@
-applications.list为直连和下载链接
+applications.list为直连和下载链接。
