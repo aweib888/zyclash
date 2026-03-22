@@ -6,12 +6,13 @@ proxy-groups:
       - 自动选择
       - 手动切换
       - 非日本节点
-      - 台湾节点
-      - 狮城节点
       - 日本节点
       - 美国节点
-      - 韩国节点
       - 香港节点
+      - 澳大利亚节点
+      - 英国节点
+      - 印度节点
+      - 其他节点
       - DIRECT
   - name: 手动切换
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
@@ -21,7 +22,7 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
     type: url-test
     include-all: true
-    interval: 300
+    interval: 9000
     tolerance: 50
   - name: 广告拦截
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png
@@ -46,12 +47,14 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 香港节点
+      - 澳大利亚节点
+      - 英国节点
       - 印度节点
       - 其他节点
       - 手动切换
   - name: 非日本节点
     type: url-test
-    interval: 300
+    interval: 9000
     tolerance: 50
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
     include-all: true
@@ -61,49 +64,49 @@ proxy-groups:
     include-all: true
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
     type: url-test
-    interval: 300
+    interval: 9000
     tolerance: 50
   - name: 澳大利亚节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Australia.png
     include-all: true
     filter: (?i)澳大利亚|🇦🇺|au|australia|sydney
     type: url-test
-    interval: 300
+    interval: 9000
     tolerance: 50
   - name: 英国节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/EG.png
     include-all: true
     filter: (?i)英|🇬🇧|uk|kingdom
     type: url-test
-    interval: 300
+    interval: 9000
     tolerance: 50
   - name: 日本节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
     include-all: true
     filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
     type: url-test
-    interval: 300
+    interval: 9000
     tolerance: 50
   - name: 美国节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
     include-all: true
     filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
     type: url-test
-    interval: 300
+    interval: 9000
     tolerance: 50
   - name: 印度节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/India.png
     include-all: true
     filter: (?i)印度|India
     type: url-test
-    interval: 300
+    interval: 9000
     tolerance: 50
   - name: 其他节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
     include-all: true
     filter: (?i)以色列|台|俄罗斯|土耳其|沙|加拿大|南非|西|智利|巴|尼|意|韩
     type: url-test
-    interval: 300
+    interval: 9000
     tolerance: 50
   - name: GLOBAL
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
@@ -116,9 +119,12 @@ proxy-groups:
       - 广告拦截
       - 应用净化
       - 漏网之鱼
-      - 香港节点
+      - 非日本节点
       - 日本节点
       - 美国节点
+      - 香港节点
+      - 澳大利亚节点
+      - 英国节点
       - 印度节点
       - 其他节点
 
