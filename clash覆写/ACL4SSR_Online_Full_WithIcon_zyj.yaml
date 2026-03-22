@@ -202,8 +202,10 @@ rule-providers:
     type: http
 
 rules:
-  - "RULE-SET,China_zhilian_zy,DIRECT"
+  # 停用，直接添加，简化步骤。- "RULE-SET,China_zhilian_zy,DIRECT"
   - "DOMAIN-SUFFIX,javdb.com,美国节点"  # 可直接在此添加网站及对应代理组
+  - "DOMAIN-SUFFIX,gg5.co,美国节点"
+  - "DOMAIN-KEYWORD,cloudflarestorage.com,DIRECT"
   - "GEOIP,CN,DIRECT"
   - "RULE-SET,LocalAreaNetwork,DIRECT"
   - "RULE-SET,ChinaMedia,DIRECT"
