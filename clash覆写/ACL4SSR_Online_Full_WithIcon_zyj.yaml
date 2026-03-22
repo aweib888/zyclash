@@ -1,7 +1,7 @@
 proxy-groups:
   - name: 节点选择
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
-    type: select
+    输入: select
     proxies:
       - 自动选择
       - 台湾节点
@@ -15,16 +15,16 @@ proxy-groups:
   - name: 手动切换
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
     include-all: true
-    type: select
+    输入: select
   - name: 自动选择
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
-    type: url-test
+    输入: url-test
     include-all: true
     interval: 300
     tolerance: 50
   - name: 广告拦截
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png
-    type: select
+    输入: select
     proxies:
       - REJECT
       - DIRECT
@@ -203,7 +203,6 @@ rule-providers:
 
 rules:
   - "RULE-SET,China_zhilian_zy,DIRECT"
-  - "DOMAIN-SUFFIX,javdb.com,美国节点"
   - "GEOIP,CN,DIRECT"
   - "RULE-SET,LocalAreaNetwork,DIRECT"
   - "RULE-SET,ChinaMedia,DIRECT"
