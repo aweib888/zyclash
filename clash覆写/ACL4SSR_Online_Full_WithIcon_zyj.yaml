@@ -43,12 +43,11 @@ proxy-groups:
       - 节点选择
       - 自动选择
       - 非日本节点
-      - 香港节点
-      - 台湾节点
-      - 狮城节点
       - 日本节点
       - 美国节点
-      - 韩国节点
+      - 香港节点
+      - 印度节点
+      - 其他节点
       - 手动切换
   - name: 非日本节点
     type: url-test
@@ -61,6 +60,20 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
     include-all: true
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 澳大利亚节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Australia.png
+    include-all: true
+    filter: (?i)澳大利亚|🇦🇺|au|australia|sydney
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 英国节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/EG.png
+    include-all: true
+    filter: (?i)英|🇬🇧|uk|kingdom
     type: url-test
     interval: 300
     tolerance: 50
@@ -78,24 +91,17 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
-  - name: 台湾节点
+  - name: 印度节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/India.png
+    include-all: true
+    filter: (?i)印度|India
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 其他节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
     include-all: true
-    filter: (?i)台|新北|彰化|TW|Taiwan
-    type: url-test
-    interval: 300
-    tolerance: 50
-  - name: 狮城节点
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
-    include-all: true
-    filter: (?i)新加坡|坡|狮城|SG|Singapore
-    type: url-test
-    interval: 300
-    tolerance: 50
-  - name: 韩国节点
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Korea.png
-    include-all: true
-    filter: (?i)KR|Korea|KOR|首尔|韩|韓
+    filter: (?i)以色列|台|俄罗斯|土耳其|沙|加拿大|南非|西|智利|巴|尼|意|韩
     type: url-test
     interval: 300
     tolerance: 50
@@ -113,9 +119,8 @@ proxy-groups:
       - 香港节点
       - 日本节点
       - 美国节点
-      - 台湾节点
-      - 狮城节点
-      - 韩国节点
+      - 印度节点
+      - 其他节点
 
 rule-providers:
   China_zhilian_zy: 
