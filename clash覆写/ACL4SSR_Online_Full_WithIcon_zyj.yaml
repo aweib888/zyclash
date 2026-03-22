@@ -1,7 +1,7 @@
 proxy-groups:
   - name: 节点选择
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
-    输入: select
+    type: select
     proxies:
       - 自动选择
       - 台湾节点
@@ -15,28 +15,28 @@ proxy-groups:
   - name: 手动切换
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
     include-all: true
-    输入: select
+    type: select
   - name: 自动选择
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
-    输入: url-test
+    type: url-test
     include-all: true
     interval: 300
     tolerance: 50
   - name: 广告拦截
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png
-    输入: select
+    type: select
     proxies:
       - REJECT
       - DIRECT
   - name: 应用净化
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hijacking.png
-    输入: select
+    type: select
     proxies:
       - REJECT
       - DIRECT
   - name: 漏网之鱼
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
-    输入: select
+    type: select
     proxies:
       - DIRECT
       - 节点选择
@@ -52,48 +52,48 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
     include-all: true
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
-    输入: url-test
+    type: url-test
     interval: 300
     tolerance: 50
   - name: 日本节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
     include-all: true
     filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
-    输入: url-test
+    type: url-test
     interval: 300
     tolerance: 50
   - name: 美国节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
     include-all: true
     filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
-    输入: url-test
+    type: url-test
     interval: 300
     tolerance: 50
   - name: 台湾节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
     include-all: true
     filter: (?i)台|新北|彰化|TW|Taiwan
-    输入: url-test
+    type: url-test
     interval: 300
     tolerance: 50
   - name: 狮城节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
     include-all: true
     filter: (?i)新加坡|坡|狮城|SG|Singapore
-    输入: url-test
+    type: url-test
     interval: 300
     tolerance: 50
   - name: 韩国节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Korea.png
     include-all: true
     filter: (?i)KR|Korea|KOR|首尔|韩|韓
-    输入: url-test
+    type: url-test
     interval: 300
     tolerance: 50
   - name: GLOBAL
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
     include-all: true
-    输入: select
+    type: select
     proxies:
       - 节点选择
       - 手动切换
@@ -115,94 +115,95 @@ rule-providers:
     behavior: classical
     interval: 86400
     format: text
-    输入: http
+    type: http
   guowaiwz_proxy_zy: 
     url: https://raw.githubusercontent.com/aweib888/zyclash/refs/heads/main/dkyt_clash/guowaiwz_proxy_zy.list
     path: ./ruleset/proxyzy.list
     behavior: classical
     interval: 86400
     format: text
-    输入: http
+    type: http
   LocalAreaNetwork: 
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
     path: ./ruleset/LocalAreaNetwork.list
     behavior: classical
     interval: 86400
     format: text
-    输入: http
+    type: http
   UnBan:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list
     path: ./ruleset/UnBan.list
     behavior: classical
     interval: 86400
     format: text
-    输入: http
+    type: http
   BanAD:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list
     path: ./ruleset/BanAD.list
     behavior: classical
     interval: 86400
     format: text
-    输入: http
+    type: http
   BanProgramAD:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list
     path: ./ruleset/BanProgramAD.list
     behavior: classical
     interval: 86400
     format: text
-    输入: http
+    type: http
   ChinaMedia:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list
     path: ./ruleset/ChinaMedia.list
     behavior: classical
     interval: 86400
     format: text
-    输入: http
+    type: http
   ProxyMedia:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyMedia.list
     path: ./ruleset/ProxyMedia.list
     behavior: classical
     interval: 86400
     format: text
-    输入: http
+    type: http
   ProxyGFWlist:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyGFWlist.list
     path: ./ruleset/ProxyGFWlist.list
     behavior: classical
     interval: 86400
     format: text
-    输入: http
+    type: http
   ChinaDomain:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
     path: ./ruleset/ChinaDomain.list
     behavior: domain
     interval: 86400
     format: text
-    输入: http
+    type: http
   ChinaCompanyIp:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
     path: ./ruleset/ChinaCompanyIp.list
     behavior: ipcidr
     interval: 86400
     format: text
-    输入: http
-  下载:
+    type: http
+  Download:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Download.list
     path: ./ruleset/Download.list
     behavior: classical
     interval: 86400
     format: text
-    输入: http
+    type: http
   YouTube:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/YouTube.list
     path: ./ruleset/YouTube.list
     behavior: classical
     interval: 86400
     format: text
-    输入: http
+    type: http
 
 rules:
   - "RULE-SET,China_zhilian_zy,DIRECT"
+  - "DOMAIN-SUFFIX,javdb.com,美国节点"  # 可直接在此添加网站及对应代理组
   - "GEOIP,CN,DIRECT"
   - "RULE-SET,LocalAreaNetwork,DIRECT"
   - "RULE-SET,ChinaMedia,DIRECT"
