@@ -104,7 +104,7 @@ proxy-groups:
   - name: 其他节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
     include-all: true
-    filter: (?i)以色列|台|俄罗斯|土耳其|沙|加拿大|南非|西|智利|巴|尼|意|韩
+    filter: (?i)以色列|台|俄罗斯|土耳其|沙|加拿大|南非|墨西哥|智利|巴|尼|意|韩
     type: url-test
     interval: 9000
     tolerance: 50
