@@ -4,13 +4,14 @@ proxy-groups:
     type: select
     proxies:
       - 自动选择
+      - 手动切换
+      - 非日本节点
       - 台湾节点
       - 狮城节点
       - 日本节点
       - 美国节点
       - 韩国节点
       - 香港节点
-      - 手动切换
       - DIRECT
   - name: 手动切换
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
@@ -41,6 +42,7 @@ proxy-groups:
       - DIRECT
       - 节点选择
       - 自动选择
+      - 非日本节点
       - 香港节点
       - 台湾节点
       - 狮城节点
@@ -48,6 +50,13 @@ proxy-groups:
       - 美国节点
       - 韩国节点
       - 手动切换
+  - name: 非日本节点
+    type: url-test
+    interval: 300
+    tolerance: 50
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
+    include-all: true
+    filter: (?i)^(?!.*(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan)).*$
   - name: 香港节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
     include-all: true
@@ -203,8 +212,8 @@ rule-providers:
 
 rules:
   # 停用，直接添加，简化步骤。- "RULE-SET,China_zhilian_zy,DIRECT"
-  - "DOMAIN-SUFFIX,javdb.com,美国节点"  # 可直接在此添加网站及对应代理组
-  - "DOMAIN-SUFFIX,gg5.co,美国节点"
+  - "DOMAIN-SUFFIX,javdb.com,非日本节点"  # 可直接在此添加网站及对应代理组
+  - "DOMAIN-SUFFIX,gg5.co,非日本节点"
   - "DOMAIN-KEYWORD,cloudflarestorage.com,DIRECT"
   - "GEOIP,CN,DIRECT"
   - "RULE-SET,LocalAreaNetwork,DIRECT"
