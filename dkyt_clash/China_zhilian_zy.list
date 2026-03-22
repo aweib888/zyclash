@@ -7,7 +7,7 @@
 # DST-PORT,80 #匹配数据目标端口
 # SRC-PORT,7777 #匹配数据源端口
 
-DOMAIN-KEYWORD,cloudflarestorage
+DOMAIN-KEYWORD,cloudflarestorage.com
 DOMAIN-KEYWORD,deqixs.com
 DOMAIN-KEYWORD,ibabyxs8.com
 DOMAIN-SUFFIX,z93j.com
